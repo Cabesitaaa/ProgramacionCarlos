@@ -1,3 +1,5 @@
+package Tema2Actividades;
+
 import java.util.Scanner;
 public class Tema2Actividad12 {
     public static void main(String[] args) {
