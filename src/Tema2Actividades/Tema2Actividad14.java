@@ -12,7 +12,7 @@ public class Tema2Actividad14 {
         if (personas > 5 && dias >= 7) {
             precioTotal *= 0.75;
         }
-        System.out.print("El presio total de la estancia es: " + precioTotal + "€");
+        System.out.print("El precio total de la estancia es: " + precioTotal + "€");
     }
 }
 
