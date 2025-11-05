@@ -1,3 +1,4 @@
+package Tema2Actividades;
 import java.util.Scanner;
 public class ExamenSimulacro {
     public static void main(String[] args) {
@@ -32,26 +33,24 @@ public class ExamenSimulacro {
                             aprobados++;
                         }
                         notas = in.nextInt();
-                        }
+                    }
 
-                        if (aprobados > suspendidos) {
-                            System.out.println("Hay " +aprobados+ " aprobados y " +suspendidos+ " suspendidos por lo tanto hay mas aprobados que suspendidos");
-                            System.out.println("Suspendidos: " + suspendidos);
-                            System.out.println("Aprobados: " + aprobados);
-                        }
-                        else if (suspendidos > aprobados) {
-                            System.out.println("Hay " +suspendidos+ " suspendidos y " +aprobados+ " aprobados por lo tanto hay mas suspendidos que aprobados");
-                            System.out.println("Suspendidos: " + suspendidos);
-                            System.out.println("Aprobados: " + aprobados);
-                        }
-                        else {
-                            System.out.println("Hay los mismo aprobados que suspendidos");
-                            System.out.println("Suspendidos: " + suspendidos);
-                            System.out.println("Aprobados: " + aprobados);
-                        }
-                        break;
+                    if (aprobados > suspendidos) {
+                        System.out.println("Hay " + aprobados + " aprobados y " + suspendidos + " suspendidos por lo tanto hay mas aprobados que suspendidos");
+                        System.out.println("Suspendidos: " + suspendidos);
+                        System.out.println("Aprobados: " + aprobados);
+                    } else if (suspendidos > aprobados) {
+                        System.out.println("Hay " + suspendidos + " suspendidos y " + aprobados + " aprobados por lo tanto hay mas suspendidos que aprobados");
+                        System.out.println("Suspendidos: " + suspendidos);
+                        System.out.println("Aprobados: " + aprobados);
+                    } else {
+                        System.out.println("Hay los mismo aprobados que suspendidos");
+                        System.out.println("Suspendidos: " + suspendidos);
+                        System.out.println("Aprobados: " + aprobados);
+                    }
+                    break;
                 case 2:
-                    
+
                     double precioNormal = 32.0;
                     double total = 0;
                     int numMiembros;
@@ -86,6 +85,8 @@ public class ExamenSimulacro {
                     }
                     System.out.println("Coste total de los billetes: " + total + " €");
                     break;
+               
+                case 3: //No se hacerlo
             }
         }
     }
