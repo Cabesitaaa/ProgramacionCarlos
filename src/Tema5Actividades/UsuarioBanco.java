@@ -1,30 +1,42 @@
-package Tema5Actividades;
+package Tema5;
+
 public class UsuarioBanco {
     private String nombre;
-    private int edad;
     private String dni;
+    private int edad;
 
-    public UsuarioBanco(String nombre, int edad, String dni) {
+    public UsuarioBanco(String nombre,String dni,int edad){
         this.nombre = nombre;
-        this.edad = edad;
         this.dni = dni;
+        this.edad = edad;
     }
-    public String getNombre() {
-        return nombre;
-    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public int getEdad() {
-        return edad;
+
+    public String getNombre() {
+        return nombre;
     }
+
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    public String getDni() {
-        return dni;
+
+    public int getEdad() {
+        return edad;
     }
+
     public void setDni(String dni) {
         this.dni = dni;
     }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public String Datos() {
+        return "Nombre: " +this.nombre + " - DNI: " +this.dni;
+    }
+
 }
