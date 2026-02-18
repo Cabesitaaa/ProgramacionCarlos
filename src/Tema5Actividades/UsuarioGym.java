@@ -7,6 +7,12 @@ public class UsuarioGym {
         this.nombre = nombre;
         this.edad = edad;
     }
+
+    public UsuarioGym() {
+        nombre = "";
+        edad = 0;
+    }
+    
     public String getNombre() {
         return nombre;
     }
