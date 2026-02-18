@@ -11,6 +11,12 @@ public class UsuarioBanco {
         this.edad = edad;
     }
 
+    public UsuarioBanco(){
+        nombre = "";
+        dni = "";
+        edad = 0;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
