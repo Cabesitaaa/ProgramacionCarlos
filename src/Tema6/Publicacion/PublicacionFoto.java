@@ -1,0 +1,35 @@
+package Tema6.Publicacion;
+public class PublicacionFoto implements Publicacion, AbrirPublicacion {
+    private String nombreArchivo;
+
+        public PublicacionFoto() {
+            this.nombreArchivo = "";
+        }
+
+        public PublicacionFoto(String nombreArchivo) {
+            this.nombreArchivo = nombreArchivo;
+        }
+
+        public String getNombreArchivo() {
+            return nombreArchivo;
+        }
+
+        public void setNombreArchivo(String nombreArchivo) {
+            this.nombreArchivo = nombreArchivo;
+        }
+
+        @Override
+        public void publicar() {
+            System.out.println("Subiendo foto al servidor: " + nombreArchivo);
+        }
+
+        @Override
+        public void compartir() {
+            System.out.println("Enviando foto por mensaje directo.");
+        }
+
+        @Override
+        public void abrir() {
+            System.out.println("Ampliando la foto [" + nombreArchivo + "] a pantalla completa.");
+        }
+    }
